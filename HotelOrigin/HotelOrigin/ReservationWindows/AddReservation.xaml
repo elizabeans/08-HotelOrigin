@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelOrigin"
         mc:Ignorable="d"
-        Title="AddReservation" Height="300" Width="300">
+        Title="AddReservation" Height="300" Width="350">
     <Grid>
-        <Button x:Name="buttonSaveReservation" Content="Save Reservation" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="272" Click="buttonSaveReservation_Click"/>
-        <ComboBox x:Name="comboBoxCustomer" DisplayMemberPath="FirstName" HorizontalAlignment="Left" Height="25" Margin="35,35,0,0" VerticalAlignment="Top" Width="205" Loaded="comboBoxCustomer_Loaded" SelectionChanged="comboBoxCustomer_SelectionChanged"/>
-        <ComboBox x:Name="comboxBoxRoom" DisplayMemberPath="RoomNumber" HorizontalAlignment="Left" Height="25" Margin="35,80,0,0" VerticalAlignment="Top" Width="205" Loaded="comboxBoxRoom_Loaded" SelectionChanged="comboxBoxRoom_SelectionChanged"/>
-        <DatePicker x:Name="datePickerCheckInDate" HorizontalAlignment="Left" Margin="45,130,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckInDate_SelectedDateChanged"/>
-        <DatePicker x:Name="datePickerCheckOutDate" HorizontalAlignment="Left" Height="25" Margin="45,180,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckOutDate_SelectedDateChanged"/>
+        <Button x:Name="buttonSaveReservation" Content="Save Reservation" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="322" Click="buttonSaveReservation_Click"/>
+        <ComboBox x:Name="comboBoxCustomer" DisplayMemberPath="FirstName" HorizontalAlignment="Left" Height="25" Margin="95,81,0,0" VerticalAlignment="Top" Width="205" Loaded="comboBoxCustomer_Loaded" SelectionChanged="comboBoxCustomer_SelectionChanged"/>
+        <ComboBox x:Name="comboxBoxRoom" DisplayMemberPath="RoomNumber" HorizontalAlignment="Left" Height="25" Margin="95,111,0,0" VerticalAlignment="Top" Width="205" Loaded="comboxBoxRoom_Loaded" SelectionChanged="comboxBoxRoom_SelectionChanged"/>
+        <DatePicker x:Name="datePickerCheckInDate" HorizontalAlignment="Left" Margin="95,141,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckInDate_SelectedDateChanged"/>
+        <DatePicker x:Name="datePickerCheckOutDate" HorizontalAlignment="Left" Height="25" Margin="95,170,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckOutDate_SelectedDateChanged"/>
+        <TextBlock x:Name="textBlockReservation" Margin="10,10,10,0" TextWrapping="Wrap" Text="Add Reservation" VerticalAlignment="Top" FontSize="24" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="39,90,0,0" TextWrapping="Wrap" Text="Customer" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="57,120,0,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="43,145,0,0" TextWrapping="Wrap" Text="Check In" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="39,174,0,0" TextWrapping="Wrap" Text="Check Out" VerticalAlignment="Top"/>
     </Grid>
 </Window>

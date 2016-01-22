@@ -12,6 +12,5 @@ namespace HotelOrigin.Core.Domain
         public int RoomNumber { get; set; }
         public int NumberOfBeds { get; set; }
         public bool HasTv { get; set; }
-        public object Customer { get; set; }
     }
 }

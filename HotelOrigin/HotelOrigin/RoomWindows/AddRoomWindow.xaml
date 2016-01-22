@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelOrigin"
         mc:Ignorable="d"
-        Title="AddRoomWindow" Height="300" Width="300">
+        Title="AddRoomWindow" Height="300" Width="355">
     <Grid>
-        <Button x:Name="buttonSaveRoom" Content="Save Room" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="272" Click="buttonSaveRoom_Click"/>
-        <TextBlock x:Name="textBlockAddRoomHeading" Margin="10,10,10,0" TextWrapping="Wrap" Text="Add New Room" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <TextBlock x:Name="textBlockRoomNumber" HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" Text="Room Number: " VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxRoomNumber" HorizontalAlignment="Left" Height="16" Margin="99,34,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="111"/>
-        <TextBlock x:Name="textBlockNumberOfBeds" HorizontalAlignment="Left" Margin="10,69,0,0" TextWrapping="Wrap" Text="Number of Beds: " VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxNumberOfBeds" HorizontalAlignment="Left" Height="23" Margin="107,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="textBlockHasTV" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Has TV?" VerticalAlignment="Top"/>
-        <CheckBox x:Name="checkBox" Content="" HorizontalAlignment="Left" Margin="70,101,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <Button x:Name="buttonSaveRoom" Content="Save Room" HorizontalAlignment="Left" Margin="10,225,0,10" Width="322" Click="buttonSaveRoom_Click"/>
+        <TextBlock x:Name="textBlockAddRoomHeading" Margin="10,10,10,0" TextWrapping="Wrap" Text="Add New Room" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="24"/>
+        <TextBlock x:Name="textBlockRoomNumber" HorizontalAlignment="Left" Margin="18,62,0,0" TextWrapping="Wrap" Text="Room Number: " VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxRoomNumber" HorizontalAlignment="Left" Height="20" Margin="107,61,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="111"/>
+        <TextBlock x:Name="textBlockNumberOfBeds" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="Number of Beds: " VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNumberOfBeds" HorizontalAlignment="Left" Height="20" Margin="107,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="111"/>
+        <TextBlock x:Name="textBlockHasTV" HorizontalAlignment="Left" Margin="60,110,0,0" TextWrapping="Wrap" Text="Has TV?" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox" Content="" HorizontalAlignment="Left" Margin="107,111,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
 
     </Grid>
 </Window>
