@@ -13,6 +13,5 @@ namespace HotelOrigin.Core.Domain
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public string TelephoneNumber { get; set; }
-        public object Room { get; set; }
     }
 }

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelOrigin"
         mc:Ignorable="d"
-        Title="ReservationListWindow" Height="300" Width="300">
+        Title="ReservationListWindow" Height="300" Width="800">
     <Grid>
-        <DataGrid x:Name="dataGridReservations" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Height="224" Width="272" AutoGenerateColumns="False" SelectionChanged="dataGridReservations_SelectionChanged">
+        <DataGrid x:Name="dataGridReservations" Margin="10,35,10,0" VerticalAlignment="Top" Height="224" AutoGenerateColumns="False" SelectionChanged="dataGridReservations_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="First Name" Binding="{Binding Customer.FirstName}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Last Name" Binding="{Binding Customer.LastName}" IsReadOnly="True"/>
@@ -16,7 +16,7 @@
                 <DataGridTextColumn Header="Check Out" Binding="{Binding CheckOutDate}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="buttonAddReservation" Content="Add Reservation" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="buttonAddReservation_Click"/>
-        <Button x:Name="buttonDeleteReservation" Content="Delete Reservation" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" Width="122" Click="buttonDeleteReservation_Click"/>
+        <Button x:Name="buttonAddReservation" Content="Add Reservation" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" Click="buttonAddReservation_Click"/>
+        <Button x:Name="buttonDeleteReservation" Content="Delete Reservation" HorizontalAlignment="Left" Margin="402,10,0,0" VerticalAlignment="Top" Width="380" Click="buttonDeleteReservation_Click"/>
     </Grid>
 </Window>
