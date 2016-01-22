@@ -1,0 +1,16 @@
+﻿<Window x:Class="HotelOrigin.AddReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelOrigin"
+        mc:Ignorable="d"
+        Title="AddReservation" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="buttonSaveReservation" Content="Save Reservation" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="272" Click="buttonSaveReservation_Click"/>
+        <ComboBox x:Name="comboBoxCustomer" DisplayMemberPath="FirstName" HorizontalAlignment="Left" Height="25" Margin="35,35,0,0" VerticalAlignment="Top" Width="205" Loaded="comboBoxCustomer_Loaded" SelectionChanged="comboBoxCustomer_SelectionChanged"/>
+        <ComboBox x:Name="comboxBoxRoom" DisplayMemberPath="RoomNumber" HorizontalAlignment="Left" Height="25" Margin="35,80,0,0" VerticalAlignment="Top" Width="205" Loaded="comboxBoxRoom_Loaded" SelectionChanged="comboxBoxRoom_SelectionChanged"/>
+        <DatePicker x:Name="datePickerCheckInDate" HorizontalAlignment="Left" Margin="45,130,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckInDate_SelectedDateChanged"/>
+        <DatePicker x:Name="datePickerCheckOutDate" HorizontalAlignment="Left" Height="25" Margin="45,180,0,0" VerticalAlignment="Top" Width="195" SelectedDateChanged="datePickerCheckOutDate_SelectedDateChanged"/>
+    </Grid>
+</Window>
